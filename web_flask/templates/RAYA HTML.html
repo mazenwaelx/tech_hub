@@ -4,7 +4,7 @@
 <html>
     <head>
         <!-- Include CSS files -->
-         <title> RAYA </title>
+         <title> Highend </title>
         <link rel="stylesheet" href="{{ url_for('static', filename='../static/css/RAYA CSS.css') }}">
         <link rel="stylesheet" href="{{ url_for('static', filename='../static/css/Category Page CSS.css') }}">
         <link rel="stylesheet" href="{{ url_for('static', filename='../static/css/Home Page CSS.css') }}">
@@ -53,9 +53,9 @@
                     </a>
                     <!-- Dropdown content for stores -->
                     <div class="dropdown-content">
-                        <a href="{{ url_for('carttest') }}">BIM</a>
-                        <a href="{{ url_for('raya') }}">AL RAYA</a>
-                        <a href="{{ url_for('walmart') }}">WALMART</a>
+                        <a href="{{ url_for('carttest') }}">2B</a>
+                        <a href="{{ url_for('raya') }}">Highend</a>
+                        <a href="{{ url_for('walmart') }}">Sigma</a>
                     </div>
                 </li>
                 <li>
@@ -130,7 +130,7 @@
 
         <!-- Header -->
         <div class="header">
-            <img src="{{ url_for('static', filename='/images/images/alraya.png') }}" alt="Raya logo">
+            <img src="{{ url_for('static', filename='/images/images/highend.png') }}" alt="Raya logo">
             <h3 id="categoryTitle">Processors</h3>
             <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
         </div>
@@ -140,7 +140,7 @@
             <div id="root"></div>
             <!-- Sidebar -->
             <div class="sidebar">
-                <div class="head"><p>Raya Cart</p></div>
+                <div class="head"><p>Highend Cart</p></div>
                 <div id="cartItem">Your cart is empty</div>
                 <div class="foot">
                     <h3>Total</h3>
@@ -164,7 +164,7 @@
         <div class="category-container">
             <!-- Category boxes -->
             <a class="category-box" data-category="fruitVegetableProducts" onclick="switchCategory('fruitVegetableProducts')">
-                <img src="{{ url_for('static', filename='/images/images/proccesoricon.png') }}" alt="Processors">
+                <img src="{{ url_for('static', filename='/images/images/processoricon.png') }}" alt="Processors">
                 <span>Processors</span>
             </a>
             <a class="category-box" data-category="meatProducts" onclick="switchCategory('meatProducts')">

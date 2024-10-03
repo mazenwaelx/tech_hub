@@ -3,7 +3,7 @@
 
     <head>
 
-        <title> BIM</title>
+        <title> 2B</title>
 
         <link rel="stylesheet" href="{{ url_for('static', filename='../static/css/Cart Test CSS.css') }}">
         <link rel="stylesheet" href="{{ url_for('static', filename='../static/css/Category Page CSS.css') }}">
@@ -51,7 +51,7 @@
                         <a data-category="fruitVegetableProducts" onclick="switchCategory('fruitVegetableProducts')">Chairs</a>
                         <a data-category="meatProducts" onclick="switchCategory('meatProducts')">Camera</a>
                         <a data-category="bakeryProducts" onclick="switchCategory('bakeryProducts')">Speakers</a>
-                        <a data-category="snacksProducts" onclick="switchCategory('snacksProducts')">keyboard</a>
+                        <a data-category="snacksProducts" onclick="switchCategory('snacksProducts')">keyboard&Mouses</a>
                         <a data-category="dairyProducts" onclick="switchCategory('dairyProducts')">Headset</a>
                         <a data-category="babyProducts" onclick="switchCategory('babyProducts')">Microphone</a>
                         <a data-category="medicineProducts" onclick="switchCategory('medicineProducts')">Pad</a>
@@ -69,9 +69,9 @@
 
                     <div class="dropdown-content">
 
-                        <a href="{{ url_for('carttest') }}">BIM</a>
-                        <a href="{{ url_for('raya') }}">AL RAYA</a>
-                        <a href="{{ url_for('walmart') }}">WALMART</a>
+                        <a href="{{ url_for('carttest') }}">2B</a>
+                        <a href="{{ url_for('raya') }}">Highend</a>
+                        <a href="{{ url_for('walmart') }}">Sigma</a>
 
                     </div>
 
@@ -193,7 +193,7 @@
 
         <div class="header">
 
-            <img src="{{ url_for('static', filename='/images/images/Bim.png') }}" alt="bim logo" >
+            <img src="{{ url_for('static', filename='/images/images/2B.png') }}" alt="bim logo" >
 
             <h3 id="categoryTitle">Chairs</h3>
 
@@ -206,7 +206,7 @@
 
             <div class="sidebar">
 
-                <div class="head"><p>Bim Cart</p></div>
+                <div class="head"><p>2B Cart</p></div>
 
                 <div id="cartItem">Your cart is empty</div>
 
@@ -250,7 +250,7 @@
             </a>
             <a class="category-box" data-category="snacksProducts" onclick="switchCategory('snacksProducts')">
                 <img src="{{ url_for('static', filename='/images/images/mothericon.png') }}" alt="Motherboard">
-                <span>keyboard</span>
+                <span>keyboard&Mouses</span>
             </a>
             <a class="category-box" data-category="dairyProducts" onclick="switchCategory('dairyProducts')">
                 <img src="{{ url_for('static', filename='/images/images/deskicon.png') }}" alt="Desktop">

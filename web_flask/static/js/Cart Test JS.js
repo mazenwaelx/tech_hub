@@ -476,7 +476,7 @@ function switchCategory(category) {
         document.getElementById('categoryTitle').textContent = 'Speakers';
     }
     else if (category === 'snacksProducts') {
-        document.getElementById('categoryTitle').textContent = 'keyboard';
+        document.getElementById('categoryTitle').textContent = 'keyboard&Mouses';
     }
     else if (category === 'dairyProducts') {
         document.getElementById('categoryTitle').textContent = 'Headset';
