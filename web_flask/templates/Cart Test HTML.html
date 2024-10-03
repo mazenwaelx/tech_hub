@@ -43,24 +43,20 @@
                 </li>
 
                 <li>
-
-                    <a href="{{ url_for('logged') }}#category" class = "active" >    
-
+                    <a href="{{ url_for('logged') }}#category" class="active">
                         Categories
-                    
                     </a>
-
+                    <!-- Dropdown content for categories -->
                     <div class="dropdown-content">
-                        <a data-category="fruitVegetableProducts" onclick="switchCategory('fruitVegetableProducts')">Motherboard</a>
-                        <a data-category="medicineProducts" onclick="switchCategory('medicineProducts')">Graphic Card</a>
-                        <a data-category="babyProducts" onclick="switchCategory('babyProducts')">Ram</a>
-                        <a data-category="meatProducts" onclick="switchCategory('meatProducts')">Processors</a>
-                        <a data-category="bakeryProducts" onclick="switchCategory('bakeryProducts')">Desktop</a>
-                        <a data-category="snacksProducts" onclick="switchCategory('snacksProducts')">Computer Case</a>
-                        <a data-category="dairyProducts" onclick="switchCategory('dairyProducts')">Power Supply</a>
+                        <a data-category="fruitVegetableProducts" onclick="switchCategory('fruitVegetableProducts')">Chairs</a>
+                        <a data-category="meatProducts" onclick="switchCategory('meatProducts')">Camera</a>
+                        <a data-category="bakeryProducts" onclick="switchCategory('bakeryProducts')">Speakers</a>
+                        <a data-category="snacksProducts" onclick="switchCategory('snacksProducts')">keyboard</a>
+                        <a data-category="dairyProducts" onclick="switchCategory('dairyProducts')">Headset</a>
+                        <a data-category="babyProducts" onclick="switchCategory('babyProducts')">Microphone</a>
+                        <a data-category="medicineProducts" onclick="switchCategory('medicineProducts')">Pad</a>
                         
                     </div>
-
                 </li>
 
                 <li>
@@ -75,9 +71,7 @@
 
                         <a href="{{ url_for('carttest') }}">BIM</a>
                         <a href="{{ url_for('raya') }}">AL RAYA</a>
-                        <a href="{{ url_for('ragabsons') }}">WELAD-RAGAB</a>
                         <a href="{{ url_for('walmart') }}">WALMART</a>
-                        <a href="{{ url_for('seoudi') }}">Seoudi Supermarkets</a>
 
                     </div>
 
@@ -201,7 +195,7 @@
 
             <img src="{{ url_for('static', filename='/images/images/Bim.png') }}" alt="bim logo" >
 
-            <h3 id="categoryTitle">Fruits & Vegetables</h3>
+            <h3 id="categoryTitle">Chairs</h3>
 
             <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
         </div>
@@ -243,32 +237,32 @@
         <div class="category-container">
             <!-- Category boxes -->
             <a class="category-box" data-category="fruitVegetableProducts" onclick="switchCategory('fruitVegetableProducts')">
-                <img src="{{ url_for('static', filename='/images/images/Vegetables.png') }}" alt="fruits&vegetables">
-                <span>Motherboard</span>
+                <img src="{{ url_for('static', filename='/images/images/processoricon.png') }}" alt="Processors">
+                <span>Chairs</span>
             </a>
             <a class="category-box" data-category="meatProducts" onclick="switchCategory('meatProducts')">
-                <img src="{{ url_for('static', filename='/images/images/fish.png') }}" alt="meat">
-                <span>Graphic Card</span>
+                <img src="{{ url_for('static', filename='/images/images/graphicicon.png') }}" alt="Graphic Card">
+                <span>Camera</span>
             </a>
             <a class="category-box" data-category="bakeryProducts" onclick="switchCategory('bakeryProducts')">
-                <img src="{{ url_for('static', filename='/images/images/bakery1.png') }}" alt="bakery">
-                <span>Ram</span>
+                <img src="{{ url_for('static', filename='/images/images/ramicon.png') }}" alt="Ram">
+                <span>Speakers</span>
             </a>
             <a class="category-box" data-category="snacksProducts" onclick="switchCategory('snacksProducts')">
-                <img src="{{ url_for('static', filename='/images/images/snacks.png') }}" alt="snacks">
-                <span>Processors</span>
+                <img src="{{ url_for('static', filename='/images/images/mothericon.png') }}" alt="Motherboard">
+                <span>keyboard</span>
             </a>
             <a class="category-box" data-category="dairyProducts" onclick="switchCategory('dairyProducts')">
-                <img src="{{ url_for('static', filename='/images/images/dairy.png') }}" alt="dairy">
-                <span>Desktop</span>
+                <img src="{{ url_for('static', filename='/images/images/deskicon.png') }}" alt="Desktop">
+                <span>Headset</span>
             </a>
             <a class="category-box" data-category="babyProducts" onclick="switchCategory('babyProducts')">
-                <img src="{{ url_for('static', filename='/images/images/baby.png') }}" alt="Baby">
-                <span>Computer Case</span>
+                <img src="{{ url_for('static', filename='/images/images/caseicon.png') }}" alt="Computer Case">
+                <span>Microphone</span>
             </a>
             <a class="category-box" data-category="medicineProducts" onclick="switchCategory('medicineProducts')">
-                <img src="{{ url_for('static', filename='/images/images/medicine.png') }}" alt="medicine">
-                <span>Power Supply</span>
+                <img src="{{ url_for('static', filename='/images/images/powericon.png') }}" alt="Power Supply">
+                <span>Pad</span>
             </a>
         </div>
         
