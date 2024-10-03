@@ -51,16 +51,14 @@
                     </a>
 
                     <div class="dropdown-content">
-
-                        <a data-category="fruitVegetableProducts" onclick="switchCategory('fruitVegetableProducts')">FRUITS & VEGETABLES</a>
-                        <a data-category="medicineProducts" onclick="switchCategory('medicineProducts')">MEDICINE</a>
-                        <a data-category="babyProducts" onclick="switchCategory('babyProducts')">BABY CARE</a>
-                        <a data-category="meatProducts" onclick="switchCategory('meatProducts')">MEAT</a>
-                        <a data-category="bakeryProducts" onclick="switchCategory('bakeryProducts')">BAKERY</a>
-                        <a data-category="snacksProducts" onclick="switchCategory('snacksProducts')">SNACKS</a>
-                        <a data-category="dairyProducts" onclick="switchCategory('dairyProducts')">DAIRY PRODUCTS</a>
-                        <a data-category="PopularPackges" onclick="switchCategory('PopularPackges')">POPULAR PACKAGES</a>
-
+                        <a data-category="fruitVegetableProducts" onclick="switchCategory('fruitVegetableProducts')">Motherboard</a>
+                        <a data-category="medicineProducts" onclick="switchCategory('medicineProducts')">Graphic Card</a>
+                        <a data-category="babyProducts" onclick="switchCategory('babyProducts')">Ram</a>
+                        <a data-category="meatProducts" onclick="switchCategory('meatProducts')">Processors</a>
+                        <a data-category="bakeryProducts" onclick="switchCategory('bakeryProducts')">Desktop</a>
+                        <a data-category="snacksProducts" onclick="switchCategory('snacksProducts')">Computer Case</a>
+                        <a data-category="dairyProducts" onclick="switchCategory('dairyProducts')">Power Supply</a>
+                        
                     </div>
 
                 </li>
@@ -243,63 +241,35 @@
         <!--box-container---------->
 
         <div class="category-container">
-
-            <!--box---------------->
-                <a class="category-box" data-category="fruitVegetableProducts" onclick="switchCategory('fruitVegetableProducts')"  >
-
+            <!-- Category boxes -->
+            <a class="category-box" data-category="fruitVegetableProducts" onclick="switchCategory('fruitVegetableProducts')">
                 <img src="{{ url_for('static', filename='/images/images/Vegetables.png') }}" alt="fruits&vegetables">
-                <span>Fruits & <br> Vegetables</span>
+                <span>Motherboard</span>
             </a>
-
-            <!--box---------------->
-            <a class="category-box" data-category="meatProducts" onclick="switchCategory('meatProducts')"  >
-
-                <img src="{{ url_for('static', filename='/images/images/fish.png') }}" alt="meat" >
-                <span>Meat</span>
+            <a class="category-box" data-category="meatProducts" onclick="switchCategory('meatProducts')">
+                <img src="{{ url_for('static', filename='/images/images/fish.png') }}" alt="meat">
+                <span>Graphic Card</span>
             </a>
-
-            <!--box---------------->
-            <a class="category-box" data-category="bakeryProducts" onclick="switchCategory('bakeryProducts')"  >
-
-                <img src="{{ url_for('static', filename='/images/images/bakery1.png') }}" alt="bakery" >
-                <span>Bakery</span>
+            <a class="category-box" data-category="bakeryProducts" onclick="switchCategory('bakeryProducts')">
+                <img src="{{ url_for('static', filename='/images/images/bakery1.png') }}" alt="bakery">
+                <span>Ram</span>
             </a>
-
-            <!--box---------------->
-            <a class="category-box" data-category="snacksProducts" onclick="switchCategory('snacksProducts')"  >
-
-                <img src="{{ url_for('static', filename='/images/images/snacks.png') }}" alt="snacks" >
-                <span>Snacks</span>
+            <a class="category-box" data-category="snacksProducts" onclick="switchCategory('snacksProducts')">
+                <img src="{{ url_for('static', filename='/images/images/snacks.png') }}" alt="snacks">
+                <span>Processors</span>
             </a>
-
-            <!--box---------------->
-            <a class="category-box" data-category="dairyProducts" onclick="switchCategory('dairyProducts')"  >
-
-                <img src="{{ url_for('static', filename='/images/images/dairy.png') }}" alt="dairy" >
-                <span>Dairy</span>
+            <a class="category-box" data-category="dairyProducts" onclick="switchCategory('dairyProducts')">
+                <img src="{{ url_for('static', filename='/images/images/dairy.png') }}" alt="dairy">
+                <span>Desktop</span>
             </a>
-
-            <!--box---------------->
-            <a class="category-box" data-category="babyProducts" onclick="switchCategory('babyProducts')"  >
-
-                <img src="{{ url_for('static', filename='/images/images/baby.png') }}" alt="Baby" >
-                <span>Baby</span>
+            <a class="category-box" data-category="babyProducts" onclick="switchCategory('babyProducts')">
+                <img src="{{ url_for('static', filename='/images/images/baby.png') }}" alt="Baby">
+                <span>Computer Case</span>
             </a>
-
-            <!--box---------------->
-            <a class="category-box" data-category="medicineProducts" onclick="switchCategory('medicineProducts')"  >
-
-                <img src="{{ url_for('static', filename='/images/images/medicine.png') }}" alt="medicine" >
-                <span>Medicine</span>
+            <a class="category-box" data-category="medicineProducts" onclick="switchCategory('medicineProducts')">
+                <img src="{{ url_for('static', filename='/images/images/medicine.png') }}" alt="medicine">
+                <span>Power Supply</span>
             </a>
-
-            <!--box---------------->
-            <a class="category-box" data-category="PopularPackges" onclick="switchCategory('PopularPackges')"  >
-
-                <img src="{{ url_for('static', filename='/images/images/package.png') }}" alt="Popular" >
-                <span>Packges</span>
-            </a>
-
         </div>
         
         <div id="root"></div>

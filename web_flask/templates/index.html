@@ -64,26 +64,7 @@
                     
                     </li>
     
-                    <li>
-    
-                        <a href="{{ url_for('home') }}#category"  >    
-    
-    
-                            Categories
-                        
-                        </a>
-                        <div class="dropdown-content">
-                            <a href="{{ url_for('login') }}#category">FRUITS & VEGETABLES</a>
-                            <a href="{{ url_for('login') }}#category">MEDICINE</a>
-                            <a href="{{ url_for('login') }}#category">BABY CARE</a>
-                            <a href="{{ url_for('login') }}#category">MEAT</a>
-                            <a href="{{ url_for('login') }}#category">BAKERY</a>
-                            <a href="{{ url_for('login') }}#category">SNACKS</a>
-                            <a href="{{ url_for('login') }}#category">DAIRY PRODUCTS</a>
-                            <a  href="{{ url_for('login') }}#category" >POPULAR PACKAGES</a>
-                        </div>
-                    
-                    </li>
+
     
                     <li>
     
@@ -295,79 +276,13 @@
                 </div>
     
                 <!--heading---------------->
-                <div class="category-heading">
-    
-                    <h2>
-                        
-                        Category
-                    
-                    </h2>
-    
-                    <span>
-                        
-                        All
-                    
-                    </span>
-    
-                </div>
+
     
     
                 
     
                 <!--box-container---------->
-                <div class="category-container">
-    
-                    <!--box---------------->
-                        <a href="{{ url_for('carttest') }}" class=" category-box"  >
-    
-                        <img src="{{ url_for('static', filename='/images/images/Vegetables.png') }}" alt="fruits&vegetables">
-                        <span>Fruits & <br> Vegetables</span>
-                    </a>
-                    <!--box---------------->
-                    <a href="{{ url_for('carttest') }}" class=" category-box"  >
-    
-    
-                        
-                        <img src="{{ url_for('static', filename='/images/images/medicine.png') }}" alt="medicines">
-                        <span>Medicine</span>
-                    </a>
-                    <!--box---------------->
-                    <a href="{{ url_for('carttest') }}" class=" category-box"  >
-    
-                        
-                        <img src="{{ url_for('static', filename='/images/images/baby.png') }}" alt="babycare">
-                        <span>Baby Care</span>
-                    </a>
-                    <!--box---------------->
-                    <a href="{{ url_for('carttest') }}" class=" category-box"  >
-    
-                        <img src="{{ url_for('static', filename='/images/images/fish.png') }}" alt="meat" >
-                        <span>Meat</span>
-                    </a>
-                    <!--box---------------->
-                    <a href="{{ url_for('carttest') }}" class=" category-box"  >
-    
-                        <img src="{{ url_for('static', filename='/images/images/bakery1.png') }}" alt="bakery" >
-                        <span>Bakery</span>
-                    </a>
-                    <!--box---------------->
-                    <a href="{{ url_for('carttest') }}" class=" category-box"  >
-    
-                        <img src="{{ url_for('static', filename='/images/images/snacks.png') }}" alt="snacks" >
-                        <span>Snacks</span>
-                    </a>
-                    <!--box---------------->
-                    <a href="{{ url_for('carttest') }}" class=" category-box"  >
-    
-                        <img src="{{ url_for('static', filename='/images/images/dairy2.png') }}" alt="dairyproducts" >
-                        <span>Dairy Products</span>
-                    </a>
-                    <a href="{{ url_for('carttest') }}" class=" category-box" >
-
-                        <img src="{{ url_for('static', filename='/images/images/package.png') }}" alt="Popular" >
-                        <span>Packges</span>
-                    </a>
-                </div>
+            
                 <div id="root"></div>
                 <script src="/web_flask/static/js/Cart Test JS.js"></script>
             </section>
@@ -375,125 +290,55 @@
     
             <!--category-end----------------------------------->
             <!--==Products====================================-->
-            <section id="popular-product">
-                <!--heading----------->
-                <div class="product-heading">
-                    <h3>Popular Product</h3>
-                    <span>All</span>
-                </div>
-                <!--box-container------>
-                <div class="product-container">
-                    <!--box---------->
-                    <div class="product-box">
-                        <img src="{{ url_for('static', filename='/images/images/apple.png') }}" alt="apple">
-                        <strong>Apple</strong>
-                        <span class="quantity">1 KG</span>
-                        <span class="price">LE 30</span>
-                        
-                    </div>
-                    <!--box---------->
-                    <div class="product-box">
-                        <img src="{{ url_for('static', filename='/images/images/chili.png') }}" alt="chili" >
-                        <strong>Chili</strong>
-                        <span class="quantity">1 KG</span>
-                        <span class="price">LE 20</span>
-                        
-                    </div>
-                    <!--box---------->
-                    <div class="product-box">
-                        <img src="{{ url_for('static', filename='/images/images/onion.png') }}" alt="onion" >
-                        <strong>Onion</strong>
-                        <span class="quantity">1 KG</span>
-                        <span class="price">LE 35</span>
-                        
-                    </div>
-                    <!--box---------->
-                    <div class="product-box">
-                        <img src="{{ url_for('static', filename='/images/images/patato.png') }}" alt="patato" >
-                        <strong>Potato</strong>
-                        <span class="quantity">1 KG</span>
-                        <span class="price">LE 25</span>
-                        
-                    </div>
-                    <!--box---------->
-                    <div class="product-box">
-                        <img src="{{ url_for('static', filename='/images/images/mango.jpg') }}" alt="mango" >
-                        <strong>Mango</strong>
-                        <span class="quantity">1 KG</span>
-                        <span class="price">LE 50</span>
-                        
-                    </div>
-                    <!--box---------->
-                    <div class="product-box">
-                        <img src="{{ url_for('static', filename='/images/images/tamato.png') }}" alt="tamato">
-                        <strong>Tomato</strong>
-                        <span class="quantity">1 KG</span>
-                        <span class="price">LE 35</span>
-                        
-                    </div>
-                </div>
-            </section>
             <!--popular-product-end--------------------->
             <!--Popular-bundle-pack===================================-->
             <section id="popular-bundle-pack">
                 <!--heading-------------->
                 <div class="product-heading">
-                    <h3>Popular Bundle Pack</h3>
+                    <h3>Popular Bundles</h3>
                 </div>
                 <!--box-container------>
                 <div class="product-container">
                     <!--box---------->
                     <div class="product-box">
-                        <img src="{{ url_for('static', filename='/images/images/pack1.png') }}" alt="pack1" >
-                        <strong>Green Garden Bundle</strong>
-                        <span class="quantity">Apple, Tomato, Potato,Blueberry</span>
-                        <span class="Sizes">Kilogram each</span>
-                        <span class="price">LE 350</span>
+                        <img src="{{ url_for('static', filename='/images/images/build1.png') }}" alt="pack1" >
+                        <strong>Gamer’s Paradise</strong>
+                        <span class="price">LE 37000</span>
                         
                     </div>
                     <!--box---------->
                     <div class="product-box">
-                        <img src="{{ url_for('static', filename='/images/images/pack2.jpeg') }}" alt="pack2" >
-                        <strong>Health Essentials Kit</strong>
-                        <span class="quantity">Panadol, Bruffen, Zyrtec,Aspirin</span>
-                        <span class="Sizes">12 Tablets each</span>
-                        <span class="price">LE 500</span>
+                        <img src="{{ url_for('static', filename='/images/images/build5.png') }}" alt="pack2" >
+                        <strong>Beast PC</strong>
+                        <span class="price">LE 28000</span>
                        
                     </div>
                     <!--box---------->
                     <div class="product-box">
-                        <img src="{{ url_for('static', filename='/images/images/pack3.jpeg') }}" alt="pack3" >
-                        <strong>Butcher's Choice Bundle</strong>
-                        <span class="quantity">Beef, Lamb, Chicken,Duck</span>
-                        <span class="Sizes">Kilogram each</span>
-                        <span class="price">LE 750</span>
+                        <img src="{{ url_for('static', filename='/images/images/build6.png') }}" alt="pack3" >
+                        <strong>Ultimate Workstation</strong>
+                        <span class="price">LE 36000</span>
                         
                     </div>
                     <!--box---------->
                     <div class="product-box">
-                        <img src="{{ url_for('static', filename='/images/images/pack4.jpeg') }}" alt="pack4" >
-                        <strong>Baby Essentials Bundle</strong>
-                        <span class="quantity">Johnson's Baby Oil, Himalaya Baby Shampoo, Moisturizer</span>
-                        <span class="Sizes">500 ml each</span>
-                        <span class="price">LE 250</span>
+                        <img src="{{ url_for('static', filename='/images/images/build9.png') }}" alt="pack4" >
+                        <strong>Streamer Dream</strong>
+                        <span class="price">LE 112000</span>
                         
                     </div>
                     <!--box---------->
                     <div class="product-box">
-                        <img src="{{ url_for('static', filename='/images/images/pack5.jpeg') }}" alt="pack5" >
-                        <strong>Baker's Delight Box</strong>
-                        <span class="quantity">White Bread, Rye Bread, Sourdough Bread</span>
-                        <span class="Sizes">12 piece each</span>
-                        <span class="price">LE 100</span>
+                        <img src="{{ url_for('static', filename='/images/images/build2.png') }}" alt="pack5" >
+                        <strong>Battlefield Bundle</strong>
+                        <span class="price">LE 97000</span>
                         
                     </div>
                     <!--box---------->
                     <div class="product-box">
-                        <img src="{{ url_for('static', filename='/images/images/pack6.jpeg') }}" alt="pack6" >
-                        <strong>Snack Attack Bundle</strong>
-                        <span class="quantity">Chips, Pretzels, crackers, Candy</span>
-                        <span class="Sizes">1  bag each</span>
-                        <span class="price">LE 200</span>
+                        <img src="{{ url_for('static', filename='/images/images/build4.png') }}" alt="pack6" >
+                        <strong>Next-Gen Setup</strong>
+                        <span class="price">LE 36000</span>
                         
                     </div>
                 </div>
@@ -530,7 +375,7 @@
                             <i class="fas fa-star"></i>
                         </div>
                         <!--==comments===-->
-                        <p>I've been using MarketMate for my weekly grocery shopping for the past few months, and I couldn't be happier with the service.</Str></p>
+                        <p>I've been using TechHub for my weekly tech shopping for the past few months, and I couldn't be happier with the service.</Str></p>
                     </div>
                     <!--box------------->
                     <div class="client-box">
@@ -538,11 +383,11 @@
                         <div class="client-profile">
                             <!--img--->
                             
-                            <img src="{{ url_for('static', filename='/images/images/Mo.jpg') }}" alt="user2" >
+                            <img src="{{ url_for('static', filename='/images/images/yasser.jpg') }}" alt="user2" >
                             <!--text-->
                             <div class="profile-text">
-                                <strong>Mohamed Khaled</strong>
-                                <span>Cooker</span>
+                                <strong>Mohamed Yasser</strong>
+                                <span>Gamer</span>
                             </div>
                         </div>
                         <!--==Rating======-->
@@ -554,7 +399,7 @@
                             <i class="fas fa-star"></i>
                         </div>
                         <!--==comments===-->
-                        <p>The range of products available is extensive. From organic vegetables to specialty items, I can find everything I need in one place. It's particularly convenient for sourcing hard-to-find ingredients for my recipes.</p>
+                        <p>The range of products available at TechHub is extensive. From high-performance PCs to specialty components, I can find everything I need in one place. It's particularly convenient for sourcing hard-to-find tech accessories for my builds.</p>
                     </div>
                     <!--box------------->
                     <div class="client-box">
@@ -577,7 +422,7 @@
                             <i class="fas fa-star"></i>
                         </div>
                         <!--==comments===-->
-                        <p>The variety of products available is fantastic. Whether I'm looking for everyday staples or specialty items, MarketMate has it all. I love exploring new products and trying out different brands.</p>
+                        <p>The variety of products available at TechHub is fantastic. Whether I'm looking for everyday tech essentials or specialty items, TechHub has it all. I love exploring new products and trying out different brands.</p>
                     </div>
                 </div>
             </section>
@@ -602,29 +447,7 @@
                     </ul>
                 </div>
                 <!--links------------------------->
-                <div class="footer-links">
-                    <strong>Category</strong>
-                    <ul>
-                        <li><a href="{{ url_for('carttest') }}#category">FRUITS & VEGETABLES</a></li>
-                        <li><a href="{{ url_for('carttest') }}#category">MEDICINE</a></li>
-                        <li><a href="{{ url_for('carttest') }}#category">BABY CARE</a></li>
-                        <li><a href="{{ url_for('carttest') }}#category">MEAT</a></li>
-                        <li><a href="{{ url_for('carttest') }}#category">BAKERY</a></li>
-                        <li><a href="{{ url_for('carttest') }}#category">SNACKS</a></li>
-                        <li><a href="{{ url_for('carttest') }}#category">DAIRY PRODUCTS</a></li>
-                        <li><a  href="{{ url_for('carttest') }}#category" >POPULAR PACKAGES</a></li>
-                    </ul>
-                </div>
-                <!--links-------------------------->
-                <div class="footer-links">
-                    <strong>Contact</strong>
-                    <ul>
-                        <li><a href="tel:+201097757050">Phone: +201097757050</a></li>
-                        <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=mokhaled2004@gmail.com" target="_blank">Email: mokhaled2004@gmail.com</a></li>
 
-                    </ul>
-                    <br><p style="color: aliceblue;">Copyright ©2024 | All Rights Reserved</p>
-                </div>
                 <div class="footer-links">
                     <strong>Rating</strong> 
                     <ul>

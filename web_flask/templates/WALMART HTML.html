@@ -40,26 +40,7 @@
                 
                 </li>
 
-                <li>
 
-                    <a href="{{ url_for('logged') }}#category" class = "active" >    
-
-
-                        Categories
-                    
-                    </a>
-                    <div class="dropdown-content">
-                        <a data-category="fruitVegetableProducts" onclick="switchCategory('fruitVegetableProducts')">FRUITS & VEGETABLES</a>
-                        <a data-category="medicineProducts" onclick="switchCategory('medicineProducts')">MEDICINE</a>
-                        <a data-category="babyProducts" onclick="switchCategory('babyProducts')">BABY CARE</a>
-                        <a data-category="meatProducts" onclick="switchCategory('meatProducts')">MEAT</a>
-                        <a data-category="bakeryProducts" onclick="switchCategory('bakeryProducts')">BAKERY</a>
-                        <a data-category="snacksProducts" onclick="switchCategory('snacksProducts')">SNACKS</a>
-                        <a data-category="dairyProducts" onclick="switchCategory('dairyProducts')">DAIRY PRODUCTS</a>
-                        <a data-category="PopularPackges" onclick="switchCategory('PopularPackges')">POPULAR PACKAGES</a>
-                        <!-- Add more links as needed -->
-                    </div>
-                </li>
 
                 <li>
 
@@ -201,7 +182,7 @@
             </div>
         <div class="header">
              <img src="{{ url_for('static', filename='/images/images/walmart.jpg') }}" alt="walmart logo" >
-            <h3 id="categoryTitle">Fruits & Vegetables</h3>
+            <h3 id="categoryTitle">Bundles</h3>
             <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
         </div>
         <div class="container">
@@ -227,55 +208,7 @@
         <script src="{{ url_for('static', filename='js/WALMART JS.js') }}"></script>
         <!--box-container---------->
 
-        <div class="category-container">
-
-            <!--box---------------->
-                <a class="category-box" data-category="fruitVegetableProducts" onclick="switchCategory('fruitVegetableProducts')"  >
-
-                <img src="{{ url_for('static', filename='/images/images/Vegetables.png') }}" alt="fruits&vegetables">
-                <span>Fruits & <br> Vegetables</span>
-            </a>
-            <!--box---------------->
-            <a class="category-box" data-category="meatProducts" onclick="switchCategory('meatProducts')"  >
-
-                <img src="{{ url_for('static', filename='/images/images/fish.png') }}" alt="meat" >
-                <span>Meat</span>
-            </a>
-            <!--box---------------->
-            <a class="category-box" data-category="bakeryProducts" onclick="switchCategory('bakeryProducts')"  >
-
-                <img src="{{ url_for('static', filename='/images/images/bakery1.png') }}" alt="bakery" >
-                <span>Bakery</span>
-            </a>
-            <!--box---------------->
-            <a class="category-box" data-category="snacksProducts" onclick="switchCategory('snacksProducts')"  >
-
-                <img src="{{ url_for('static', filename='/images/images/snacks.png') }}" alt="snacks" >
-                <span>Snacks</span>
-            </a>
-            <!--box---------------->
-            <a class="category-box" data-category="dairyProducts" onclick="switchCategory('dairyProducts')"  >
-
-                <img src="{{ url_for('static', filename='/images/images/dairy.png') }}" alt="dairy" >
-                <span>Dairy</span>
-            </a>
-            <!--box---------------->
-            <a class="category-box" data-category="babyProducts" onclick="switchCategory('babyProducts')"  >
-
-                <img src="{{ url_for('static', filename='/images/images/baby.png') }}" alt="Baby" >
-                <span>Baby</span>
-            </a>
-            <a class="category-box" data-category="medicineProducts" onclick="switchCategory('medicineProducts')"  >
-
-                <img src="{{ url_for('static', filename='/images/images/medicine.png') }}" alt="medicine" >
-                <span>Medicine</span>
-            </a>
-            <a class="category-box" data-category="PopularPackges" onclick="switchCategory('PopularPackges')"  >
-
-                <img src="{{ url_for('static', filename='/images/images/package.png') }}" alt="Popular" >
-                <span>Packges</span>
-            </a>
-        </div>
+        
         
         <div id="root"></div>
         
