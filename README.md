@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="/readmeimages/Logo.png" alt="TechHub Logo" width="200">
+  <img src="/readmeimages/Logo1.png" alt="TechHub Logo" width="200">
 </div>
 
 ## Table of Contents
