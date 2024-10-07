@@ -10,13 +10,6 @@
 - [Contributing](#contributing)
 - [License](#license)
 - [Screenshot](#screenshot)
-- [Story Behind TechHub](#Story-Behind-TechHub)
-  - [Inspiration](#Inspiration)
-  - [Technical Challenges](#Technical-Challenges)
-  - [Overcoming Struggles](#Overcoming-Struggles)
-  - [Future Vision](#Future-Vision)
-
-- [LandingPage](#landing-page)
 - [ContactUs](#contact-us)
 
 ## Introduction
