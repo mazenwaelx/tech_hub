@@ -14,14 +14,14 @@
     <body>
         <!--==Navigation================================-->
         <nav class="navigation">
-    
+
             <!--logo-------->
-            
+
 
             <img src="{{ url_for('static', filename='/images/images/Logo.png') }}" alt="Logo" class = "Logo" >
 
 
-            
+
             <label for="menu-btn" class="menu-icon">
 
                 <span class="nav-icon"></span>
@@ -33,22 +33,22 @@
 
                 <li>
                     <a href="{{ url_for('logged') }}" >
-                        
+
                         Home
 
                     </a>
-                
+
                 </li>
 
 
 
                 <li>
 
-                    <a href="{{ url_for('logged') }}#category"  >    
+                    <a href="{{ url_for('logged') }}#category"  >
 
-                        
+
                         Stores
-                    
+
                     </a>
                     <div class="dropdown-content">
                         <a href="{{ url_for('carttest') }}">2B</a>
@@ -59,29 +59,29 @@
                 </li>
 
                 <li>
-                    
-                    <a href="{{ url_for('logged') }}#popular-bundle-pack"  >    
-                        
+
+                    <a href="{{ url_for('logged') }}#popular-bundle-pack"  >
+
                         Packages
-                    
+
                     </a>
-                
+
                 </li>
-                
+
                 <li>
-                    
+
                     <a href="{{ url_for('feedback') }}" >
 
-                        
+
                         Feedback
-                    
+
                     </a>
-                
+
                 </li>
-                
+
                 <li>
 
-                    
+
                     <a href="{{ url_for('aboutus') }}" >
 
                         About&nbsp;us
@@ -91,62 +91,62 @@
                 </li>
 
                 <li>
-                    
-                    
+
+
                     <a href="{{ url_for('contactus') }}"  >
-                        
+
                         Contact&nbsp;Us
-                    
+
                     </a>
-                
+
                 </li>
 
                 <li>
-                    
-                    
+
+
                     <a href="{{ url_for('track') }}"  >
-                        
-                        Track&nbsp;Your&nbsp;Order  
-                    
+
+                        Track&nbsp;Your&nbsp;Order
+
                     </a>
-                
+
                 </li>
 
                 <li>
-                    
+
                     <a href="{{ url_for('login') }}" >
 
-                            
+
                         Logout
-                        
+
                     </a>
-                    
+
                 </li>
 
-                
-               
-            
+
+
+
 
                 </ul>
 
             <!--right-nav-(cart-like)-->
             <div class="right-nav">
 
-                
 
-                
+
+
 
                 <!--User----->
                 <!-- Inside profile.html -->
-                
-                
+
+
                 <a class = "like" href="{{ url_for('profile') }}">
                     <img src="{{ photo_url }}" alt="Profile Image">
                 </a>
-                
+
                 <a class = "greeting">Welcome, {{ first_name }}</a>
             </div>
-            
+
 
         </nav>
 
@@ -168,14 +168,14 @@
                 <br>
             </div>
         </section>
-        
+
         <!--search-banner-end--------------->
         <div>
-        
+
             <div class="left-sidebar">
-                <img src="{{ url_for('static', filename='/images/images/plate82.png') }}" alt="plate" >
-    
-                
+                <img src="{{ url_for('static', filename='/images/images/82.png') }}" alt="" >
+
+
             </div>
             </div>
         <div class="header">
@@ -199,27 +199,27 @@
                     <a class="foot" href="{{ url_for('checkoutdetails') }}">
                         procced to checkout
                      </a>
-                    
+
                 </div>
             </div>
         </div>
         <script src="{{ url_for('static', filename='js/WALMART JS.js') }}"></script>
         <!--box-container---------->
 
-        
-        
+
+
         <div id="root"></div>
-        
+
         <!-- Cart Display -->
         <div>
             <div id="cartItem"></div>
             <div id="total"></div>
         </div>
-        
+
         <div class ="right">
-            <img src="{{ url_for('static', filename='/images/images/plate102.png') }}" alt="plate" >
+            <img src="{{ url_for('static', filename='/images/images/102.png') }}" alt="" >
 
         <div>
-            
+
     </body>
 </html>
