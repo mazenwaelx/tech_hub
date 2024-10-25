@@ -504,7 +504,7 @@ def fetch_filtered_orders():
 
 #----------------------------Carttest page (BIM Store)-----------------------------------------------
 
-@app.route('/carttest')
+@app.route('/2b')
 def carttest():
     if 'user_id' not in session:
         flash('Please log in to view your profile.', 'danger')
@@ -634,7 +634,7 @@ def paymentconfirm():
 
 #----------------------------Raya Page (RAYA Store)-----------------------------------------------
 
-@app.route('/raya')
+@app.route('/highend')
 def raya():
     if 'user_id' not in session:
         flash('Please log in to view your profile.', 'danger')
@@ -678,7 +678,7 @@ def ragabsons():
 
 #----------------------------Walmart Page (WALMART Store)-----------------------------------------------
 
-@app.route('/walmart')
+@app.route('/sigma')
 def walmart():
     if 'user_id' not in session:
         flash('Please log in to view your profile.', 'danger')
